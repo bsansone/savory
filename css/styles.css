@@ -1,0 +1,248 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+html {
+  background-color: #fffef8;
+  font-weight: 400;
+}
+
+body {
+  background: #fffef8;
+  color: #231f20;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body *,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.1em;
+  line-height: 1.15;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  font-style: normal;
+}
+
+header {
+  background-color: #f04e36;
+}
+
+.logo {
+  fill: white;
+}
+
+.flex {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.flex-item {
+  flex: 1 1 100%;
+}
+
+section {
+}
+
+#hero {
+  align-items: center;
+  background: url("../img/wallhaven-582230.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hero * {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+#hero h1 {
+  font-family: "gin";
+  font-size: 3rem;
+  font-weight: 300;
+  padding-bottom: 0.5em;
+  width: 395px;
+}
+
+#hero a {
+  font-family: "rift";
+  font-weight: 700;
+}
+
+#hero a:before {
+  content: "-----------------";
+  font-size: 0.9rem;
+  overflow: hidden;
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  width: 100%;
+}
+
+#arsenal {
+    /* background: url("../img/topography.svg") repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+  height: 90vh;
+}
+
+#arsenal > section:first-of-type {
+  border: 8px solid #e6dbce;
+  margin: 20px;
+  width: 100%;
+}
+
+#arsenal h2 {
+  color: #f04e36;
+  font-family: "gin";
+  font-size: 3rem;
+  font-weight: 300;
+  margin-top: 40px;
+  position: relative;
+}
+
+#arsenal h2:after {
+  color: #e6dbce;
+  content: "----------------------";
+  display: block;
+  font-size: 1.4rem;
+  overflow: hidden;
+  line-height: 1;
+}
+
+#arsenal * {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#arsenal p {
+  font-family: "rift";
+}
+
+#arsenal p:first-of-type {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+#arsenal p:last-of-type {
+  color: #333132;
+  font-size: 0.9rem;
+  padding-bottom: 20px;
+}
+
+#arsenal .flex-item img,
+#arsenal h3 {
+  border-right: 4px solid rgba(230, 219, 206, 0.3);
+}
+
+#arsenal .flex-item:last-of-type img,
+#arsenal .flex-item:last-of-type h3 {
+  border: none;
+}
+
+#arsenal img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  padding: 20px 20px 0 20px;
+}
+
+#arsenal h3 {
+  font-family: "rift";
+  font-size: 1.6rem;
+}
+
+#arsenal h4 {
+  color: #333132;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+#video {
+  background-color: #f04e36;
+}
+
+#video > section:first-of-type {
+  border-bottom: 8px solid #c13d32;
+  border-top: 8px solid #c13d32;
+  margin: 20px 0;
+  width: 100%;
+}
+
+#video h2 {
+  color: white;
+  font-family: "gin";
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* 1rem(16px) @ 30rem(480px) increasing to 2rem(32px) @ 120rem(1920px) */
+@media (min-width: 30rem) {
+  :root {
+    font-size: calc(1rem + ((1vw - 0.3rem) * 1.1111));
+        /* Where: * 1.1111 = 100 * font_Size_Difference / viewport_Width_Difference */;
+  }
+}
+/* Prevent font scaling beyond this breakpoint */
+@media (min-width: 120rem) {
+  :root {
+    font-size: 2rem;
+  }
+}
