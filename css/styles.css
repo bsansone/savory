@@ -113,7 +113,8 @@ section {
   font-size: 3rem;
   font-weight: 300;
   padding-bottom: 0.5em;
-  width: 395px;
+  max-width: 500px;
+  width: 100%;
 }
 
 #hero a {
@@ -200,6 +201,11 @@ section {
   display: block;
   height: auto;
   padding: 20px 20px 0 20px;
+  transition: all 0.4s;
+}
+
+#arsenal img:hover {
+  transform: translateY(-20px);
 }
 
 #arsenal h3 {
