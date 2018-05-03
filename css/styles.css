@@ -72,6 +72,11 @@ header {
   background-color: #f04e36;
 }
 
+main {
+  position: relative;
+  overflow: hidden;
+}
+
 .logo {
   fill: white;
 }
