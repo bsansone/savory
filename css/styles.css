@@ -87,9 +87,6 @@ header {
   flex: 1 1 100%;
 }
 
-section {
-}
-
 #hero {
   align-items: center;
   background: url("../img/wallhaven-582230.jpg") no-repeat center center;
@@ -99,6 +96,7 @@ section {
   background-size: cover;
   flex-direction: column;
   justify-content: center;
+  z-index: 2;
 }
 
 #hero * {
@@ -133,24 +131,30 @@ section {
 }
 
 #arsenal {
-    /* background: url("../img/topography.svg") repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
   height: 90vh;
+}
+
+#arsenal svg {
+  fill: rgba(230, 219, 206, 0.4);
+  height: 100vh;
+  overflow: visible;
+  position: absolute;
+  top: -280%;
+  transform: scale(7);
+  width: 100vw;
 }
 
 #arsenal > section:first-of-type {
   border: 8px solid #e6dbce;
   margin: 20px;
   width: 100%;
+  z-index: 2;
 }
 
 #arsenal h2 {
   color: #f04e36;
   font-family: "gin";
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 300;
   margin-top: 40px;
   position: relative;
@@ -222,6 +226,7 @@ section {
 
 #video {
   background-color: #f04e36;
+  z-index: 2;
 }
 
 #video > section:first-of-type {
@@ -234,19 +239,28 @@ section {
 #video h2 {
   color: white;
   font-family: "gin";
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin-top: 30px;
   text-transform: uppercase;
   text-align: center;
 }
 
-/* 1rem(16px) @ 30rem(480px) increasing to 2rem(32px) @ 120rem(1920px) */
+#video svg {
+  fill: white;
+  height: 100vh;
+  overflow: visible;
+  position: absolute;
+  top: -47%;
+  transform: scale(1.27);
+  width: 100vw;
+}
+
 @media (min-width: 30rem) {
   :root {
     font-size: calc(1rem + ((1vw - 0.3rem) * 1.1111));
-        /* Where: * 1.1111 = 100 * font_Size_Difference / viewport_Width_Difference */;
   }
 }
-/* Prevent font scaling beyond this breakpoint */
+
 @media (min-width: 120rem) {
   :root {
     font-size: 2rem;
