@@ -356,6 +356,17 @@ main {
   left: -15%;
 }
 
+.iframe-wrapper {
+  width: 1100px;
+  height: 500px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 @media (min-width: 30rem) {
   :root {
     font-size: calc(1rem + ((1vw - 0.3rem) * 1.1111));
