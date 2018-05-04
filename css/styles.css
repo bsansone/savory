@@ -167,8 +167,12 @@ main {
   font-family: "gin";
   font-size: 2.5rem;
   font-weight: 300;
-  margin-top: 40px;
+  padding-top: 40px;
   position: relative;
+}
+
+#product h2 {
+    padding-top: 80px;
 }
 
 #arsenal h2 {
