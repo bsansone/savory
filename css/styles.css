@@ -143,6 +143,19 @@ main {
     height: 100vh;
 }
 
+#arsenal:after,
+#product:after {
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  content: "";
+  background: url(../img/background.png) no-repeat center center;
+  background-size: cover;
+}
+
 #arsenal svg,
 #product svg {
   fill: rgba(230, 219, 206, 0.4);
