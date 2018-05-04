@@ -139,7 +139,12 @@ main {
   height: 90vh;
 }
 
-#arsenal svg {
+#product {
+    height: 100vh;
+}
+
+#arsenal svg,
+#product svg {
   fill: rgba(230, 219, 206, 0.4);
   height: 100vh;
   overflow: visible;
@@ -149,15 +154,16 @@ main {
   width: 100vw;
 }
 
-#arsenal > section:first-of-type {
+#arsenal > section:first-of-type,
+#product > section:first-of-type {
   border: 8px solid #e6dbce;
   margin: 20px;
   width: 100%;
   z-index: 2;
 }
 
-#arsenal h2 {
-  color: #f04e36;
+#arsenal h2,
+#product h2 {
   font-family: "gin";
   font-size: 2.5rem;
   font-weight: 300;
@@ -165,22 +171,93 @@ main {
   position: relative;
 }
 
-#arsenal h2:after {
+#arsenal h2 {
+  color: #f04e36;
+}
+
+#product h2 {
+  color: #231f20;
+}
+
+#arsenal h2:after,
+#product h2:after {
   color: #e6dbce;
-  content: "----------------------";
   display: block;
   font-size: 1.4rem;
   overflow: hidden;
   line-height: 1;
 }
 
-#arsenal * {
+#arsenal h2:after {
+  content: "----------------------";
+}
+
+#product h2:after {
+  content: "---------------";
+}
+
+#arsenal *,
+#product * {
   text-transform: uppercase;
   text-align: center;
 }
 
-#arsenal p {
+#arsenal p,
+#product p,
+#product h5,
+#product button {
   font-family: "rift";
+}
+
+#product .flex {
+  height: auto;
+  padding: 0 60px;
+}
+
+#product .flex .flex-item:first-of-type {
+  flex-basis: 800px;
+}
+
+#product .flex .flex-item:last-of-type * {
+  text-align: left;
+}
+
+#product .flex .flex-item:last-of-type {
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-basis: 600px;
+}
+
+#product p {
+  padding-bottom: 12px;
+}
+
+#product .flex .flex-item:last-of-type p {
+    font-size: 0.8rem;
+}
+
+#product .flex .flex-item:last-of-type h5 {
+    font-size: 0.9rem;
+    padding-bottom: 12px;
+}
+
+#product .flex .flex-item:last-of-type p:first-of-type {
+  font-size: 1rem;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+#product button {
+  border: 2px dashed;
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+#product h4 {
+    font-family: "rift";
+    color: #f04e36;
 }
 
 #arsenal p:first-of-type {
@@ -205,16 +282,15 @@ main {
   border: none;
 }
 
-#arsenal img {
+#arsenal img,
+#product img {
   max-width: 100%;
   display: block;
   height: auto;
-  padding: 20px 20px 0 20px;
-  transition: all 0.4s;
 }
 
-#arsenal img:hover {
-  transform: translateY(-20px);
+#arsenal img {
+  padding: 20px 20px 0 20px;
 }
 
 #arsenal h3 {
@@ -227,6 +303,10 @@ main {
   font-size: 0.8rem;
   font-style: italic;
   font-weight: 300;
+}
+
+#product button {
+    color: #f04e36;
 }
 
 #video {
@@ -252,12 +332,11 @@ main {
 
 #video svg {
   fill: white;
-  height: 100vh;
   overflow: visible;
   position: absolute;
-  top: -47%;
-  transform: scale(1.27);
-  width: 100vw;
+  top: -59%;
+  transform: scale(0.92);
+  left: -15%;
 }
 
 @media (min-width: 30rem) {
