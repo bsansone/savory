@@ -373,8 +373,10 @@ main {
 #product button {
   border: 2px dashed;
   border-radius: 4px;
+  display: block;
   font-weight: bold;
   padding: 8px;
+  margin: 0 auto;
 }
 
 #product h4 {
