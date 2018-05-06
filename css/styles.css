@@ -135,7 +135,6 @@ main {
 
 #hero * {
   color: white;
-  text-align: center;
   text-transform: uppercase;
   position: relative;
 }
@@ -172,8 +171,61 @@ main {
   height: 100vh;
 }
 
+#about-us {
+  height: 100%;
+}
+
+#about-us .flex {
+  align-items: center;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 875px;
+}
+
+#about-us .flex:first-of-type {
+  padding-top: 40px;
+}
+
+#about-us .flex:last-of-type {
+  padding-bottom: 40px;
+}
+
+#about-us .flex .flex-item:first-of-type {
+  padding-right: 40px;
+}
+
+#about-us .flex:last-of-type .flex-item:last-of-type {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#about-us p {
+  font-family: "industry";
+  font-size: 0.6rem;
+}
+
+#about-us img {
+  height: auto;
+  max-width: 100%;
+}
+
+#about-us h5 {
+  background-color: #f04e36;
+  color: white;
+  font-family: "gin";
+  position: absolute;
+  padding: 8px;
+  font-size: 0.5rem;
+  bottom: 25px;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+
 #arsenal:after,
-#product:after {
+#product:after,
+#about-us:after {
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -186,7 +238,8 @@ main {
 }
 
 #arsenal svg,
-#product svg {
+#product svg,
+#about-us svg {
   fill: rgba(230, 219, 206, 0.4);
   height: 100vh;
   overflow: visible;
@@ -197,7 +250,8 @@ main {
 }
 
 #arsenal > section:first-of-type,
-#product > section:first-of-type {
+#product > section:first-of-type,
+#about-us > section:first-of-type {
   border: 8px solid #e6dbce;
   margin: 20px;
   width: 100%;
@@ -209,7 +263,8 @@ main {
 }
 
 #arsenal h2,
-#product h2 {
+#product h1,
+#about-us h1 {
   font-family: "gin";
   font-size: 2.5rem;
   font-weight: 300;
@@ -217,7 +272,22 @@ main {
   position: relative;
 }
 
-#product h2 {
+#about-us h1 {
+  font-size: 1rem;
+  padding-top: 80px;
+}
+
+#about-us h1 span {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+#about-us h1 span:before {
+  content: '';
+  display: block;
+}
+
+#product h1 {
   margin-bottom: -30px;
   padding-top: 105px;
 }
@@ -226,12 +296,13 @@ main {
   color: #f04e36;
 }
 
-#product h2 {
+#product h1 {
   color: #231f20;
 }
 
 #arsenal h2:after,
-#product h2:after {
+#product h1:after,
+#about-us h1:after {
   color: #e6dbce;
   display: block;
   font-size: 1.4rem;
@@ -243,14 +314,18 @@ main {
   content: "----------------------";
 }
 
-#product h2:after {
+#product h1:after {
   content: "---------------";
 }
 
+#about-us h1:after {
+  content: "-------------------";
+}
+
 #arsenal *,
-#product * {
+#product *,
+#about-us h5 {
   text-transform: uppercase;
-  text-align: center;
 }
 
 #arsenal p,
@@ -267,10 +342,6 @@ main {
 
 #product .flex .flex-item:first-of-type {
   flex-basis: 800px;
-}
-
-#product .flex .flex-item:last-of-type * {
-  text-align: left;
 }
 
 #product .flex .flex-item:last-of-type {
@@ -389,7 +460,6 @@ main {
   font-size: 2.5rem;
   padding-top: 15px;
   text-transform: uppercase;
-  text-align: center;
 }
 
 #video svg {
@@ -410,6 +480,18 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.t-c {
+  text-align: center;
+}
+
+.t-l {
+  text-align: left;
+}
+
+.t-r {
+  text-align: right;
 }
 
 @media (min-width: 30rem) {
