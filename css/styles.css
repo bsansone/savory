@@ -93,10 +93,35 @@ header nav {
 }
 
 header nav button {
+  align-items: center;
   color: white;
+  display: flex;
   font-family: "rift";
-  font-size: 0.65rem;
+  font-size: 0.5rem;
   font-weight: 700;
+}
+
+header nav.highlighted button {
+    color: #231f20;
+}
+
+.burger {
+  padding-left: 8px;
+}
+
+.burger div {
+  background-color: white;
+  border-radius: 4px;
+  height: 2px;
+  width: 14px;
+}
+
+header nav.highlighted .burger div {
+  background-color: #231f20;
+}
+
+.burger div:first-of-type {
+  margin-bottom: 4px;
 }
 
 header.highlighted .logo {
