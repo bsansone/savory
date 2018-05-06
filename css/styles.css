@@ -69,34 +69,46 @@ h6 {
 }
 
 header {
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
+  display: flex;
   position: absolute;
-  right: 0;
-  width: 337px;
+  width: 100%;
   z-index: 3;
 }
 
-header svg {
+header .logo {
+  margin: 0 auto;
+  width: 337px;
+}
+
+header .logo svg {
   fill: white;
   height: 140px;
   width: 337px;
 }
 
-header.highlighted {
+header nav {
+  position: absolute;
+  right: 40px;
+}
+
+header nav button {
+  color: white;
+  font-family: "rift";
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+header.highlighted .logo {
   background-color: #f04e36;
   border-top: 6px solid #f48372;
   height: 100px;
   width: 200px;
 }
 
-header.highlighted svg {
+header.highlighted .logo svg {
   height: 100px;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: -8px;
+  padding-bottom: 6px;
   transform: scale(2);
   width: 200px;
 }
@@ -104,10 +116,6 @@ header.highlighted svg {
 main {
   position: relative;
   overflow: hidden;
-}
-
-.logo {
-  fill: white;
 }
 
 .flex {
