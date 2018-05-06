@@ -140,7 +140,7 @@ main {
 }
 
 #product {
-    height: 100vh;
+  height: 100vh;
 }
 
 #arsenal:after,
@@ -185,7 +185,7 @@ main {
 }
 
 #product h2 {
-    padding-top: 80px;
+  padding-top: 80px;
 }
 
 #arsenal h2 {
@@ -251,12 +251,12 @@ main {
 }
 
 #product .flex .flex-item:last-of-type p {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 #product .flex .flex-item:last-of-type h5 {
-    font-size: 0.9rem;
-    padding-bottom: 12px;
+  font-size: 0.9rem;
+  padding-bottom: 12px;
 }
 
 #product .flex .flex-item:last-of-type p:first-of-type {
@@ -273,8 +273,8 @@ main {
 }
 
 #product h4 {
-    font-family: "rift";
-    color: #f04e36;
+  font-family: "rift";
+  color: #f04e36;
 }
 
 #arsenal p:first-of-type {
@@ -323,12 +323,18 @@ main {
 }
 
 #product button {
-    color: #f04e36;
+  color: #f04e36;
 }
 
 #video {
   background-color: #f04e36;
   z-index: 2;
+}
+
+#video img {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
 }
 
 #video > section:first-of-type {
@@ -342,7 +348,7 @@ main {
   color: white;
   font-family: "gin";
   font-size: 2.5rem;
-  margin-top: 30px;
+  padding-top: 15px;
   text-transform: uppercase;
   text-align: center;
 }
