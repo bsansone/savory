@@ -69,7 +69,36 @@ h6 {
 }
 
 header {
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  right: 0;
+  width: 337px;
+  z-index: 3;
+}
+
+header svg {
+  fill: white;
+  height: 140px;
+  width: 337px;
+}
+
+header.highlighted {
   background-color: #f04e36;
+  border-top: 6px solid #f48372;
+  height: 100px;
+  width: 200px;
+}
+
+header.highlighted svg {
+  height: 100px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -8px;
+  transform: scale(2);
+  width: 200px;
 }
 
 main {
@@ -175,6 +204,10 @@ main {
   z-index: 2;
 }
 
+#arsenal > .flex {
+  height: auto;
+}
+
 #arsenal h2,
 #product h2 {
   font-family: "gin";
@@ -185,7 +218,8 @@ main {
 }
 
 #product h2 {
-  padding-top: 80px;
+  margin-bottom: -30px;
+  padding-top: 105px;
 }
 
 #arsenal h2 {
@@ -308,6 +342,11 @@ main {
 
 #arsenal img {
   padding: 20px 20px 0 20px;
+  transition: all 0.4s;
+}
+
+#arsenal img:hover {
+  transform: translateY(-20px);
 }
 
 #arsenal h3 {
