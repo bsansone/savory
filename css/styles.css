@@ -167,7 +167,7 @@ main {
 
 #hero {
   align-items: center;
-  background: url("../img/wallhaven-582230.jpg") no-repeat center center;
+  background: url("../img/homebackground.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
